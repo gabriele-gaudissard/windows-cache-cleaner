@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#142c42"/></linearGradient><linearGradient id="accent"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs>
+<rect width="1280" height="360" rx="24" fill="url(#bg)"/>
+<path d="M980 0v360M1080 0v360M1180 0v360M900 80h380M900 180h380M900 280h380" stroke="#244052" opacity=".5"/>
+<rect x="64" y="54" width="44" height="44" rx="12" fill="#22d3ee"/>
+<path d="M76 67l11 9-11 9m15 0h8" fill="none" stroke="#0b1220" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="128" y="82" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="600" letter-spacing="3" fill="#7dd3fc">WINDOWS 11 UTILITY</text>
+<text x="64" y="166" font-family="Segoe UI,Arial,sans-serif" font-size="59" font-weight="700" fill="#f8fafc">Windows Cache Cleaner</text>
+<text x="66" y="214" font-family="Segoe UI,Arial,sans-serif" font-size="28" fill="#b9cbdc">Clear caches. Keep your folders.</text>
+<g font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="600" fill="#bdebf5">
+<rect x="64" y="265" width="190" height="42" rx="21" fill="#153949"/><text x="87" y="291">AUTO USER PROFILE</text>
+<rect x="270" y="265" width="133" height="42" rx="21" fill="#153949"/><text x="291" y="291">FILES ONLY</text>
+<rect x="419" y="265" width="158" height="42" rx="21" fill="#153949"/><text x="443" y="291">PORTABLE .BAT</text>
+</g>
+<rect x="1090" y="110" width="106" height="125" rx="14" fill="#163f54" stroke="url(#accent)" stroke-width="2"/>
+<path d="M1118 144l15 12-15 12m23 0h20" fill="none" stroke="#67e8f9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1111" y="211" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700" fill="#c7edfa">.BAT</text>
+</svg>

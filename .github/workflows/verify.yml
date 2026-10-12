@@ -1,0 +1,19 @@
+name: Windows fixture checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify cleanup against disposable fixtures
+        shell: powershell
+        run: .\tests\Verify-Cleanup.ps1
