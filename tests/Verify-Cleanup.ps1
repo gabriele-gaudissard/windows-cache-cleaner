@@ -56,11 +56,18 @@ foreach ($account in @('Account One','Account Two')) {
     $env:CLEAN_PROFILE = $testProfile
     $env:CLEAN_SCRIPT = $sourcePath
     $env:CLEAN_MODE = 'temp'
+    $validatorCode = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($parts[1]))
     $savedTemp = $env:TEMP
     try {
+        $env:TEMP = $tempDir
+        & $psExe -NoProfile -NonInteractive -EncodedCommand $validatorCode
+        Assert ($LASTEXITCODE -eq 0) 'Valid TEMP rejected'
         $env:TEMP = $fixture
-        & $psExe -NoProfile -NonInteractive -Command $parts[1]
+        & $psExe -NoProfile -NonInteractive -EncodedCommand $validatorCode
         Assert ($LASTEXITCODE -ne 0) 'Unsafe TEMP accepted'
     } finally { $env:TEMP = $savedTemp }
     Write-Output "$account : syntax, nested cleanup, folder preservation, missing paths, junction rejection and unsafe TEMP checks passed."
 }
+
+# Expected rejection above leaves LASTEXITCODE=1; successful assertions mean success.
+exit 0

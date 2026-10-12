@@ -5,6 +5,7 @@
 <p align="center">
   <a href="https://github.com/gabriele-gaudissard/windows-cache-cleaner/releases/latest/download/Clean-Windows-Cache.bat"><img alt="Download BAT" src="https://img.shields.io/badge/Download-.BAT-22d3ee?style=for-the-badge"></a>
   <img alt="Windows 11" src="https://img.shields.io/badge/Windows-11-2563eb?style=for-the-badge">
+  <a href="https://github.com/gabriele-gaudissard/windows-cache-cleaner/actions/workflows/verify.yml"><img alt="Windows fixture checks" src="https://github.com/gabriele-gaudissard/windows-cache-cleaner/actions/workflows/verify.yml/badge.svg?branch=main"></a>
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-475569?style=for-the-badge"></a>
 </p>
 
